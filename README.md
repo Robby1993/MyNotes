@@ -1,9 +1,6 @@
-# KEEP NOTES Android Application :notebook:
+# My Notes Android Application :notebook:
 
-![Keep Notes Android Application](https://github.com/akash2099/Resources/blob/master/Keep_Notes_Android_Application/Keep_Notes_GIF.gif)
-
-### **Try the [app](https://github.com/akash2099/Resources/blob/master/Keep_Notes_Android_Application/Keep_Notes.apk) yourself :zap:**
-### **For help refer to demo [video](https://github.com/akash2099/Resources/blob/master/Keep_Notes_Android_Application/Screen_Recording_Keep_Notes.mp4) :v:**
+### **For help refer to demo [video]) :v:**
 
 
 ## Features :fire:
@@ -34,7 +31,7 @@
 
 :heavy_check_mark: Layouts (Linear: Horizontal, Vertical, Table, Relative)
 
-:heavy_check_mark: ListView (Adapter)
+:heavy_check_mark: Recylerview (Adapter)
 
 :heavy_check_mark: Dialog Fragment
 
@@ -46,9 +43,6 @@
 
 :heavy_check_mark: WebView
 
-:heavy_check_mark: Custom Launcher
-
-:heavy_check_mark: Permissions
 
 :heavy_check_mark: Intent
 
@@ -58,7 +52,7 @@
 
 :heavy_check_mark: Custom Notification
 
-:heavy_check_mark: Alarm Manager
+:heavy_check_mark: Work Manager
 
 :heavy_check_mark: MediaPlayer
 
