@@ -2,11 +2,10 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ll_listbox"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    app:cardBackgroundColor="#FFFFFF"
+    app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="10dp"
     app:cardUseCompatPadding="true">
 
@@ -16,32 +15,24 @@
         android:orientation="vertical"
         android:padding="5dp">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/title_tv2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/title_tv2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="3dp"
-                android:ellipsize="marquee"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:fontFamily="@font/aldrich"
-                android:marqueeRepeatLimit="marquee_forever"
-                android:paddingRight="10dp"
-                android:scrollHorizontally="true"
-                android:singleLine="true"
-                android:text="Title"
-                android:textColor="#9B09DA"
-                android:textSize="24sp" />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/desc_tv2"
@@ -50,9 +41,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/overpass"
-            android:paddingRight="10dp"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textSize="18sp"
             tools:text="Description" />
 
@@ -67,9 +56,10 @@
             android:background="#FFFF00"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textSize="12sp"
-            tools:text="2020-09-25 8:30:46" />
+            tools:text="2020-09-25 8:30:46"
+            android:layout_marginStart="10dp" />
 
     </LinearLayout>
 

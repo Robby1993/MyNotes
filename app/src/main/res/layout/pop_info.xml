@@ -1,184 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/rl_popup"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/back_rem"
-                android:layout_width="54dp"
-                android:layout_height="58dp"
-                android:layout_marginTop="8dp"
-                android:background="#FFFFFF"
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:onClick="bu_back_rem"
                 app:srcCompat="@drawable/ic_back" />
 
             <TextView
-                android:id="@+id/head_rem"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="30dp"
-                android:fontFamily="@font/shojumaru"
-                android:text="REMINDER"
-                android:textColor="#4400FD"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/reminder"
+                android:textColor="@color/textColor"
                 android:textSize="24sp" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/llTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:padding="3dp"
+                app:srcCompat="@drawable/ic_clock" />
 
             <TextView
                 android:id="@+id/h11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:fontFamily="monospace"
-                android:text="TIME"
-                android:textColor="#000000"
-                android:textColorHighlight="#FFFFFF"
-                android:textColorHint="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/time"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/time_df"
-                android:layout_width="166dp"
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginStart="9dp"
                 android:layout_marginLeft="9dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
                 android:gravity="center_horizontal"
-                android:text="17:24:05"
-                android:textColor="#FF07BA"
-                android:textColorHighlight="#FFFFFF"
-                android:textColorHint="#FFFFFF"
-                android:textSize="18sp" />
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="17:24:05" />
 
-            <ImageButton
-                android:id="@+id/time_pick"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="12dp"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:onClick="bu_time_pick"
-                android:outlineAmbientShadowColor="#FFFFFF"
-                android:outlineSpotShadowColor="#FFFFFF"
-                app:srcCompat="@drawable/ic_clock" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/llDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="3dp"
+                app:srcCompat="@drawable/ic_calendar" />
 
             <TextView
                 android:id="@+id/h22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:fontFamily="monospace"
-                android:text="DATE"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/date"
                 android:textColor="#000000"
-                android:textColorHighlight="#FFFFFF"
-                android:textColorHint="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/date_df"
-                android:layout_width="166dp"
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginStart="9dp"
                 android:layout_marginLeft="9dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
                 android:gravity="center_horizontal"
-                android:text="2020-09-24"
-                android:textColor="#CA0994"
-                android:textColorHighlight="#FFFFFF"
-                android:textColorHint="#FFFFFF"
-                android:textSize="18sp" />
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="2020-09-24" />
 
-            <ImageButton
-                android:id="@+id/date_pic"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:padding="5dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="12dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:onClick="bu_date_pick"
-                app:srcCompat="@drawable/ic_calendar" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="#FFFFFF"
-            android:gravity="center"
+            android:layout_marginVertical="15dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/delete_rem"
-                android:layout_width="wrap_content"
-                android:layout_height="34dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="35dp"
-                android:layout_marginBottom="10dp"
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:background="#FF0000"
+                android:background="@drawable/my_button"
+                android:backgroundTint="@color/red"
                 android:onClick="bu_delete_rem"
-                android:text="REMOVE"
-                android:textColor="#FFFFFF" />
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="7dp"
+                android:text="@string/remove"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <Button
-                android:id="@+id/save_rem"
-                android:layout_width="wrap_content"
-                android:layout_height="34dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="10dp"
+                android:id="@+id/btnSet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:background="#0CE822"
+                android:background="@drawable/my_button"
                 android:onClick="bu_save_rem"
-                android:outlineAmbientShadowColor="#F60909"
-                android:text="SET"
-                android:textColor="#4400FD" />
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="7dp"
+                android:text="@string/set"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
-            <!--            -->
 
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </LinearLayout>
 

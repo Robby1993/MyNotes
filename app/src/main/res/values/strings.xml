@@ -11,4 +11,12 @@
     <string name="settings">Settings</string>
     <string name="cancel">CANCEL</string>
     <string name="save">SAVE</string>
+    <string name="reminder">REMINDER</string>
+    <string name="time">TIME</string>
+    <string name="date">DATE</string>
+    <string name="remove">REMOVE</string>
+    <string name="set">SET</string>
+    <string name="no_data_found">No data found</string>
+    <string name="title">Title</string>
+    <string name="confirm">Confirm</string>
 </resources>

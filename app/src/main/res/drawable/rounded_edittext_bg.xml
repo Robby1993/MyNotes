@@ -1,0 +1,8 @@
+<!-- rounded_edittext_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Background color -->
+    <corners android:radius="10dp" /> <!-- Radius for rounded corners -->
+    <stroke
+        android:width="2dp"
+        android:color="#CCCCCC" /> <!-- Border width --><!-- Border color -->
+</shape>

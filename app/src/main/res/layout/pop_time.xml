@@ -12,50 +12,56 @@
         android:orientation="vertical">
 
         <TimePicker
-            android:id="@+id/tp"
-            style="@android:style/Widget.Material.Light.TimePicker"
+            android:id="@+id/timePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="#EFE8F6"
             android:fitsSystemWindows="true"
-            android:headerBackground="#6200EE"
-            android:numbersBackgroundColor="#FFFFFF"
-            android:numbersSelectorColor="#9F8FFA"
-            android:numbersTextColor="#000000" />
+            android:headerBackground="@color/black"
+            android:numbersBackgroundColor="@color/black"
+            android:numbersSelectorColor="@color/red"
+            android:numbersTextColor="@color/white" />
 
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/time_cancel_picker"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:background="#6200EE"
-                android:text="CANCEL"
-                android:textColor="#FFFFFF" />
+                android:background="@drawable/my_button"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="7dp"
+                android:text="@string/cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <Button
-                android:id="@+id/time_save_picker"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnConfirm"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:background="#6200EE"
-                android:text="CONFIRM"
-                android:textColor="#FFFFFF" />
+                android:background="@drawable/my_button"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="7dp"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
-        </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
     </LinearLayout>
 
 </RelativeLayout>
