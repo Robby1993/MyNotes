@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFE8F6"
+        android:dividerHeight="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_add_bu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.65"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:cropToPadding="false"
+        android:focusable="true"
+        android:onClick="bu_add_edit_activity"
+        app:backgroundTint="#6200EE"
+        app:elevation="10dp"
+        app:fabSize="auto"
+        app:hoveredFocusedTranslationZ="6dp"
+        app:maxImageSize="55dp"
+        app:pressedTranslationZ="6dp"
+        app:srcCompat="@drawable/add_icon_style" />
+
+</RelativeLayout>-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:scrollbars="none"
+        tools:listitem="@layout/layout_ticket" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_add_bu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/white"
+        android:cropToPadding="false"
+        android:focusable="true"
+        android:onClick="addUpdateOpenActivity"
+        app:borderWidth="0dp"
+        android:clickable="true"
+        app:elevation="10dp"
+        app:fabSize="auto"
+        app:hoveredFocusedTranslationZ="6dp"
+        app:maxImageSize="60dp"
+        app:pressedTranslationZ="6dp" />
+</RelativeLayout>

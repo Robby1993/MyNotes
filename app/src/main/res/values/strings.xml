@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="Heading1">TITLE</string>
+    <string name="Heading2">DESCRIPTION</string>
+    <string name="hint1">Give some title</string>
+    <string name="hint2">Give some description</string>
+    <string name="channel_name">Reminder</string>
+    <string name="channel_description">App Reminder and Alarm Notificaions</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">SAVE</string>
+</resources>
