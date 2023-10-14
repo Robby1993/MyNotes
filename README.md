@@ -2,6 +2,8 @@
 
 ### **For help refer to demo [video]) :v:**
 
+https://github.com/Robby1993/MyNotes/assets/48564625/7d0e27f9-8a51-4d76-9183-1725171daf31
+
 
 ## Features :fire:
 
