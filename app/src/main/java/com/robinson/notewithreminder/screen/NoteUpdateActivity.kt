@@ -20,6 +20,7 @@ import com.robinson.notewithreminder.database.DBManager
 import com.robinson.notewithreminder.databinding.ActivityNoteAddUpdateBinding
 import com.robinson.notewithreminder.fragments.InfoDialogFragment
 import com.robinson.notewithreminder.utilities.CommonParameters
+import com.robinson.notewithreminder.utilities.MusicControl
 import com.robinson.notewithreminder.utilities.ReminderWorker
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -64,6 +65,7 @@ class NoteUpdateActivity : AppCompatActivity() {
 
     private fun getIntentData() {
         if (intent != null && intent.extras != null) {
+            MusicControl.getInstance(this)?.stopMusic()
             notificationId = intent.getLongExtra(CommonParameters.noteId, 0)
             title = intent.getStringExtra(CommonParameters.noteTitle)
             desc = intent.getStringExtra(CommonParameters.noteDescription)
