@@ -20,7 +20,7 @@ https://github.com/Robby1993/MyNotes/assets/48564625/7d0e27f9-8a51-4d76-9183-172
 
 ## Framework Used :star2:
 
-:iphone: **Android Studio (Java)**
+:iphone: **Android Studio (Java / Kotlin)**
 
 
 ## Components Used 〽️
@@ -31,11 +31,13 @@ https://github.com/Robby1993/MyNotes/assets/48564625/7d0e27f9-8a51-4d76-9183-172
 
 :heavy_check_mark: Button
 
-:heavy_check_mark: Layouts (Linear: Horizontal, Vertical, Table, Relative)
+:heavy_check_mark: Layouts (Linear: Horizontal, Vertical, Relative)
 
 :heavy_check_mark: Recylerview (Adapter)
 
 :heavy_check_mark: Dialog Fragment
+
+:heavy_check_mark: View Binding
 
 :heavy_check_mark: Alert Dialog
 
@@ -44,7 +46,6 @@ https://github.com/Robby1993/MyNotes/assets/48564625/7d0e27f9-8a51-4d76-9183-172
 :heavy_check_mark: Search bar (Menu)
 
 :heavy_check_mark: WebView
-
 
 :heavy_check_mark: Intent
 
